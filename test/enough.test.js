@@ -17,7 +17,5 @@ var enough = require('..');
 
 describe('/lib/enough.js', function() {
   describe('create moudle and view class', function() {
-    var foo = enough.Klass();
-    console.log(foo)
   });
 });
