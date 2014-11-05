@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Enough • TodoMVC</title>
+<link rel="stylesheet" href="bower_components/todomvc-common/base.css">
+<link rel="stylesheet" href="css/app.css">
+<link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+<script src="js/jquery.js"></script>
+<script src="js/grace.js"></script>
+<script src="../../lib/enough.js"></script>
+</head>
+<body>
+<section id="todoapp">
+  <header id="header">
+    <h1>enough todos</h1>
+    <input id="new-todo" placeholder="What needs to be done?" autofocus>
+  </header>
+  <!-- This section should be hidden by default and shown when there are todos -->
+  <section id="main">
+    <input id="toggle-all" type="checkbox">
+    <label for="toggle-all">Mark all as complete</label>
+    <ul id="todo-list">
+    <script id="grace-template" type="template">
+    <#each val in $todos#>
+      <li class="<#if $val.completed#>completed<#/if#>" data-id="<#=$val.id#>">
+        <div class="view">
+          <input class="toggle" type="checkbox" <#if $val.completed#>checked="checked"<#/if#> />
+          <label><#=$val.content#></label>
+          <button class="destroy"></button>
+        </div>
+        <input class="edit" value="<#=$val.content#>"/>
+      </li>
+    <#/each#>
+    </script>
+    </ul>
+  </section>
+  <!-- This footer should hidden by default and shown when there are todos -->
+  <footer id="footer">
+    <span id="todo-count"></span>
+    <ul id="filters">
+      <li>
+      <a class="selected" href="#/">All</a>
+      </li>
+      <li>
+      <a href="#/active">Active</a>
+      </li>
+      <li>
+      <a href="#/completed">Completed</a>
+      </li>
+    </ul>
+    <button id="clear-completed"></button>
+  </footer>
+</section>
+<footer id="info">
+  <p>Double-click to edit a todo</p>
+  <p>Created by <a target="_blank" href="http://www.github.com/xudafeng">xdf</a></p>
+</footer>
+<script src="js/model.js"></script>
+<script src="js/view.js"></script>
+<script src="js/controller.js"></script>
+</body>
+</html>
