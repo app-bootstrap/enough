@@ -1,4 +1,4 @@
-(function(global, undefined) {
+(function(global, $, grace, undefined) {
   'use strict';
 
   var ENTER_KEY_KEYCODE = 13;
@@ -94,4 +94,4 @@
     }
   });
 
-})(this);
+})(this, jQuery, grace);
