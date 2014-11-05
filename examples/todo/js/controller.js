@@ -17,7 +17,7 @@
         that.updateView();
         that.model.store();
       });
-      this.on('change', function() {
+      this.on('change:state', function() {
         that.updateView();
         that.view.setRoute(that.get('state'));
       });
