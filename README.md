@@ -9,27 +9,21 @@ enough
 
 [npm-image]: https://img.shields.io/npm/v/enough.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/enough
-[travis-image]: https://img.shields.io/travis/xudafeng/enough.svg?style=flat-square
-[travis-url]: https://travis-ci.org/xudafeng/enough
-[coveralls-image]: https://img.shields.io/coveralls/xudafeng/enough.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/xudafeng/enough?branch=master
+[travis-image]: https://img.shields.io/travis/enoughjs/enough.svg?style=flat-square
+[travis-url]: https://travis-ci.org/enoughjs/enough
+[coveralls-image]: https://img.shields.io/coveralls/enoughjs/enough.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/enoughjs/enough?branch=master
 [node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
 [download-image]: https://img.shields.io/npm/dm/enough.svg?style=flat-square
 [download-url]: https://npmjs.org/package/enough
 
-> enough by xdf
+> enough mv* framework
 
 ## Installment
 
 ```bash
 $ npm i enough -g
-```
-
-## Quick Start
-
-```bash
-$ enough xdf
 ```
 
 ## License
