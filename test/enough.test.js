@@ -92,7 +92,7 @@ describe('/lib/enough.js', function() {
       instance.emit('foo', 'bar');
       instance.on('change:value', function(v) {
         v.should.be.equal('foo');
-      })
+      });
       instance.set('value', 'foo');
       instance.get('value').should.be.equal('foo');
     });
