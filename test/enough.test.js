@@ -25,7 +25,7 @@ describe('/lib/enough.js', function() {
         return 'method';
       }
     });
-    var subModel = Model.Klass({
+    var SubModel = Model.Klass({
       constructor: function() {
         this.foo = 'foo';
       },
@@ -34,7 +34,7 @@ describe('/lib/enough.js', function() {
       }
     });
     var instance = new Model();
-    var sinstance = new subModel();
+    var sinstance = new SubModel();
     it('should have constructor property', function() {
       instance.should.be.an.instanceof(Model);
       instance.should.have.property('property', 'property');
@@ -44,7 +44,7 @@ describe('/lib/enough.js', function() {
     });
     it('should inherit from parent', function() {
       sinstance.should.be.an.instanceof(Model);
-      sinstance.should.be.an.instanceof(subModel);
+      sinstance.should.be.an.instanceof(SubModel);
       sinstance.should.have.property('property', 'property');
       sinstance.should.have.property('foo', 'foo');
       sinstance.bar().should.be.equal('bar');

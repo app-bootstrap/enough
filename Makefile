@@ -15,4 +15,6 @@ travis: install
 		./node_modules/.bin/_mocha \
 		--report lcovonly \
 		--test/*.test.js
+jshint:
+	@./node_modules/jshint/bin/jshint .
 .PHONY: test
