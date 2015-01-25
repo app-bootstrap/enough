@@ -18,6 +18,8 @@ enough
 [download-image]: https://img.shields.io/npm/dm/enough.svg?style=flat-square
 [download-url]: https://npmjs.org/package/enough
 
+[![Coverage Status](https://coveralls.io/repos/enoughjs/enough/badge.svg)](https://coveralls.io/r/enoughjs/enough)
+
 > enough mv* framework
 
 ## Installment
