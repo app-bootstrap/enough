@@ -11,7 +11,7 @@ enough
 [npm-url]: https://npmjs.org/package/enough
 [travis-image]: https://img.shields.io/travis/enoughjs/enough.svg?style=flat-square
 [travis-url]: https://travis-ci.org/enoughjs/enough
-[coveralls-image]: https://img.shields.io/coveralls/enoughjs/enough.svg?style=flat-square
+[coveralls-image]: https://coveralls.io/repos/enoughjs/enough/badge.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/enoughjs/enough?branch=master
 [node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
